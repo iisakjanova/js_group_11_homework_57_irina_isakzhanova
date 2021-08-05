@@ -1,0 +1,12 @@
+.BillingCalculator {
+    padding: 15px;
+}
+
+.MethodOptionLabel {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.MethodOptionInput {
+    margin-right: 10px;
+}
