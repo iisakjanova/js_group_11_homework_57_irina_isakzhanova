@@ -6,14 +6,19 @@ const EqualMethodForm = props => {
     return (
         <div className="EqualFormBlock">
             <form>
-                {props.inputFields.map(inputField => (
+                {Object.values(props.inputFields).map(inputField => (
                     <InputField
                         key={inputField.id}
                         inputField={inputField}
                         onChange={props.onChange}
                     />
                 ))}
-                <button type="button">Рассчитать</button>
+                <button
+                    type="button"
+                    onClick={() => props.onButtonClick()}
+                >
+                    Рассчитать
+                </button>
             </form>
         </div>
     );

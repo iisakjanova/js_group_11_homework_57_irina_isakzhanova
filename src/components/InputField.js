@@ -7,7 +7,7 @@ const InputField = props => {
             <input
                 className="InputField"
                 value={props.inputField.count}
-                onChange={e => props.onChange(props.inputField.id, props.inputField.count, e.target.value)}
+                onChange={e => props.onChange(props.inputField.type, e.target.value)}
             />
             <span className="InputFieldUnit">{props.inputField.unit}</span>
         </label>

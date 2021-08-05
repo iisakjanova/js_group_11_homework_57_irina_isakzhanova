@@ -10,3 +10,7 @@
 .MethodOptionInput {
     margin-right: 10px;
 }
+
+.ErrorMessage {
+    color: red;
+}
