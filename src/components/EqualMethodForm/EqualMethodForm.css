@@ -1,0 +1,19 @@
+.EqualFormBlock {
+    padding: 10px;
+}
+
+.InputFieldLabel {
+    display: flex;
+}
+
+.InputField {
+    margin: 0 10px 20px 10px;
+}
+
+.InputFieldName {
+    flex-grow: 1;
+}
+
+.InputFieldUnit {
+    width: 50px;
+}

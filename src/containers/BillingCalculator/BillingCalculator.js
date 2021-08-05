@@ -1,5 +1,8 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
+
+import React from 'react';
 import './BillingCalculator.css';
+import EqualMethodCalculator from "../EqualMethodCalculator/EqualMethodCalculator";
 
 const BillingCalculator = () => {
     const [billingMethod, setBillingMethod] = useState('equal');
@@ -32,13 +35,13 @@ const BillingCalculator = () => {
                 />
                 Каждому индивидуально
             </label>
-            <p>
+            <div>
                 {billingMethod === "equal" ? (
-                    'Equal Form'
+                    <EqualMethodCalculator />
                 ) : (
                     'Individual Form'
                 )}
-            </p>
+            </div>
         </div>
     );
 };
