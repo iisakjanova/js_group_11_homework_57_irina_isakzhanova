@@ -10,6 +10,7 @@ const EqualMethodForm = props => {
                     <InputField
                         key={inputField.id}
                         inputField={inputField}
+                        onChange={props.onChange}
                     />
                 ))}
                 <button type="button">Рассчитать</button>

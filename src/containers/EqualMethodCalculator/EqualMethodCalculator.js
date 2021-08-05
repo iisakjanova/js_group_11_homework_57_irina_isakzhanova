@@ -12,9 +12,22 @@ const EqualMethodCalculator = () => {
         {name: 'Доставка', count: 0, unit: 'сом', id: nanoid(),},
     ]);
 
+    const onInputChange = (id, count, value) => {
+        setInputFields(inputFields => {
+            return inputFields.map(inputField => {
+                if (inputField.id === id) {
+                    return {...inputField, count: value}
+                }
+
+                return inputField;
+            });
+        });
+    };
+
     return (
         <>
             <EqualMethodForm
+                onChange={onInputChange}
                 inputFields={inputFields}
             />
         </>
