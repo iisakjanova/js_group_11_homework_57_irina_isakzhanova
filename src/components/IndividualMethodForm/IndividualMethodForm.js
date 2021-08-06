@@ -26,10 +26,12 @@ const IndividualMethodForm = props => {
                     <InputField
                         key={inputField.id}
                         inputField={inputField}
+                        onChange={props.onInputChange}
                     />
                 ))}
                 <button
                     type="button"
+                    onClick={() => props.onButtonClick()}
                 >
                     Рассчитать
                 </button>
