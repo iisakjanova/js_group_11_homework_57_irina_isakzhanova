@@ -10,6 +10,8 @@ const IndividualMethodForm = props => {
                 {Object.values(props.guests).map(guest => (
                     <GuestInputField
                         key={guest.id}
+                        guest={guest}
+                        onGuestChange={props.onGuestChange}
                     />
                 ))}
                 <button

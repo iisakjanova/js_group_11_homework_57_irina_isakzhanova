@@ -23,12 +23,22 @@ const IndividualMethodCalculator = () => {
         });
     };
 
+    const onGuestInputChange = (id, type, value) => {
+        setGuests(guests => (
+            {
+                ...guests,
+                [id]: {...guests[id], [type]: value}
+            }
+        ));
+    };
+
     return (
         <div>
             <IndividualMethodForm
                 inputFields={inputFields}
                 guests={guests}
                 onAddGuest={addGuest}
+                onGuestChange={onGuestInputChange}
             />
         </div>
     );
