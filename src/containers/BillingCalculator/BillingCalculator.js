@@ -14,6 +14,7 @@ const BillingCalculator = () => {
 
     return (
         <div className="BillingCalculator">
+            <p>Сумма заказа считается:</p>
             <label className="MethodOptionLabel">
                 <input
                     className="MethodOptionInput"

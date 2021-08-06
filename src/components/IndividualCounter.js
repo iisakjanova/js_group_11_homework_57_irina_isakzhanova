@@ -28,9 +28,10 @@ const IndividualCounter = props => {
                 .filter(({name, amount}) => Boolean(name) && Boolean(amount))
                 .map(guest => (
                     <p key={guest.id}>
-                        {guest.name}: <b>{getOneGuestTotal(guest.amount)}</b>
+                        {guest.name}: <b>{getOneGuestTotal(guest.amount)} сом</b>
                     </p>
-                ))}
+                ))
+            }
         </div>
     );
 };
