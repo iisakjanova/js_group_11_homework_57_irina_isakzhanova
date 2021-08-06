@@ -32,6 +32,13 @@ const IndividualMethodCalculator = () => {
         ));
     };
 
+    const removeGuest = (id) => {
+        setGuests(guests => {
+            const {[id]: _, ...newGuests} = guests;
+            return newGuests;
+        });
+    };
+
     return (
         <div>
             <IndividualMethodForm
@@ -39,6 +46,7 @@ const IndividualMethodCalculator = () => {
                 guests={guests}
                 onAddGuest={addGuest}
                 onGuestChange={onGuestInputChange}
+                onGuestRemove={removeGuest}
             />
         </div>
     );

@@ -12,6 +12,7 @@ const IndividualMethodForm = props => {
                         key={guest.id}
                         guest={guest}
                         onGuestChange={props.onGuestChange}
+                        onGuestRemove={props.onGuestRemove}
                     />
                 ))}
                 <button

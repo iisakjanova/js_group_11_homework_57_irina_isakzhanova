@@ -17,7 +17,12 @@ const GuestInputField = props => {
                     onChange={e => props.onGuestChange(props.guest.id, 'amount', e.target.value)}
                 /> сом
             </label>
-            <button type="button">Удалить</button>
+            <button
+                type="button"
+                onClick={() => props.onGuestRemove(props.guest.id)}
+            >
+                Удалить
+            </button>
         </div>
     );
 };
