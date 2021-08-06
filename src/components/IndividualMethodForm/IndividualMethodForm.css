@@ -1,0 +1,13 @@
+.IndividualFormBlock {
+    padding: 10px;
+}
+
+.GuestInputField {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.AddGuestBtn {
+    margin-bottom: 20px;
+}

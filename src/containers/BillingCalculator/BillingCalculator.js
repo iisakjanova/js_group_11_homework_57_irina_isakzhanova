@@ -3,6 +3,7 @@ import {useState} from 'react';
 import React from 'react';
 import './BillingCalculator.css';
 import EqualMethodCalculator from "../EqualMethodCalculator/EqualMethodCalculator";
+import IndividualMethodCalculator from "../IndividualMethodCalculator/IndividualMethodCalculator";
 
 const BillingCalculator = () => {
     const [billingMethod, setBillingMethod] = useState('equal');
@@ -39,7 +40,7 @@ const BillingCalculator = () => {
                 {billingMethod === "equal" ? (
                     <EqualMethodCalculator />
                 ) : (
-                    'Individual Form'
+                    <IndividualMethodCalculator />
                 )}
             </div>
         </div>
